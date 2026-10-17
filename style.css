@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light dark;
+  --bg: #FAF8F4; --alt: #F3ECDD; --ink: #262A33; --soft: #6F6A5C; --line: #ECE1C7;
+  --teal: #1D6E66; --teal-tint: #E3F1EE; --yellow: #FDD053; --yellow-tint: #FFF4DA; --yellow-text: #8A5A0F;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #171A1F; --alt: #20242B; --ink: #F1EEE6; --soft: #B5AF9E; --line: #343944;
+    --teal: #6FD0C5; --teal-tint: #1E2F2D; --yellow: #FDD053; --yellow-tint: #332B14; --yellow-text: #F6C75B; }
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65; max-width: 760px; margin: 0 auto; padding: 24px 18px 64px;
+  color: var(--ink); background: var(--bg);
+}
+a { color: var(--teal); }
+header.top { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+header.top img { width: 76px; height: 76px; border-radius: 18px; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 0; }
+h2 { font-size: 1.25rem; margin-top: 2.2rem; }
+h3 { font-size: 1.05rem; margin-top: 1.4rem; }
+.tagline, .updated { color: var(--soft); margin: 0; }
+ul { padding-left: 1.2rem; } li { margin-bottom: .5rem; }
+.box { background: var(--yellow-tint); border-left: 5px solid var(--yellow); border-radius: 12px; padding: 12px 18px; margin: 1.2rem 0; }
+.box.teal { background: var(--teal-tint); border-left-color: var(--teal); }
+.hero { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin: 20px 0 8px; }
+.hero img { width: 200px; max-width: 45%; height: auto; }
+.hero div { flex: 1 1 280px; }
+.stats { display: flex; gap: 12px; flex-wrap: wrap; margin: 1.5rem 0; }
+.stat { flex: 1 1 150px; background: var(--alt); border-radius: 14px; padding: 10px 14px; }
+.stat b { display: block; font-size: 1.4rem; }
+.stat span { color: var(--soft); font-size: .9rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 1rem 0; }
+.card { background: var(--alt); border-radius: 14px; padding: 14px 16px; }
+.card h3 { margin: 0 0 4px; }
+.card p { margin: 0; color: var(--soft); font-size: .95rem; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: 1rem 0; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { background: var(--alt); }
+nav.links { margin-top: 1.5rem; font-size: .95rem; }
+nav.links a { margin-right: 14px; }
+footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); text-align: center; color: var(--soft); font-size: .9rem; }
+footer img { width: 120px; height: auto; display: block; margin: 0 auto 8px; border-radius: 12px; }
