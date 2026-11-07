@@ -40,4 +40,9 @@ th { background: var(--alt); }
 nav.links { margin-top: 1.5rem; font-size: .95rem; }
 nav.links a { margin-right: 14px; }
 footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); text-align: center; color: var(--soft); font-size: .9rem; }
-footer img { width: 120px; height: auto; display: block; margin: 0 auto 8px; border-radius: 12px; }
+footer img { width: 160px; height: auto; display: block; margin: 0 auto 8px; }
+.get { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin: 1.2rem 0; }
+.get a { display: inline-block; background: var(--teal); color: #fff; text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 12px; }
+.get a:hover { filter: brightness(1.1); }
+.get span { color: var(--soft); font-size: .9rem; }
+@media (prefers-color-scheme: dark) { .get a { color: #12211f; } }
